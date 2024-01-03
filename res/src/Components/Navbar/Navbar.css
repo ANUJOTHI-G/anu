@@ -1,0 +1,33 @@
+nav {
+    background-color: #faf6f7; /* Change this to your desired background color */
+    padding: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  li {
+    margin-right: 20px;
+  }
+  
+  li:last-child {
+    margin-right: 0;
+    float: right;
+  }
+  
+  Link {
+    text-decoration: none;
+    color: rgb(255, 255, 255); /* Change this to your desired text color */
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  Link:hover {
+    color: #f6f6f7; /* Change this to your desired hover color */
+  }
+  

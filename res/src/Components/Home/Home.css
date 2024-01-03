@@ -1,0 +1,59 @@
+.home{
+    background-image: url("C:\second\res\src\Components\images\bg.jpg");
+    background-size: cover;
+}
+h1{
+    font-size: 90px;
+
+}
+
+.about{
+  width: 1130px;
+  max-width: 85%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.text{
+  width: 500px;
+  font-style: italic;
+}
+.text {
+  font-size: 90px;
+  font-weight: 600;
+  margin-bottom: 30px;  
+
+}
+.text h2:hover{
+  color:rgb(117, 113, 113);
+  
+}
+
+.text h5{
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 110px;        
+}
+span{
+  color: #4070f4;
+}
+.text p{
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+.pic{
+    height: auto;
+    width:  500px;
+  }
+  .logo
+  {
+  
+    width:50px;
+  }
+  .run{
+    font-size: medium;
+    font-style: italic;
+    
+  }
