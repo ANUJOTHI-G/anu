@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import "./Product.css";
-
+import { Link } from 'react-router-dom';
 const Product = ({ product, onAddToCart }) => {
   const { id, name, price, imageUrl } = product;
   const [quantity, setQuantity] = useState(1);
@@ -41,6 +41,7 @@ const Cart = ({ cartItems }) => {
           </li>
         ))}
       </ul>
+      <button className='btn'><li><Link to="/thankyou">BuyNow</Link></li></button>
     </div>
   );
 };
@@ -67,6 +68,7 @@ const App = () => {
 
   return (
     <div className="app">
+      <div>
       <Product
         product={{
           id: 1,
@@ -85,6 +87,8 @@ const App = () => {
         }}
         onAddToCart={handleAddToCart}
       />
+      </div>
+      <div>
       <Product
         product={{
           id: 3,
@@ -103,6 +107,10 @@ const App = () => {
         }}
         onAddToCart={handleAddToCart}
       />
+      </div>
+      <div>
+
+      
       <Product
         product={{
           id: 5,
@@ -121,6 +129,8 @@ const App = () => {
         }}
         onAddToCart={handleAddToCart}
       />
+      </div>
+      <div>
       <Product
         product={{
           id: 7,
@@ -139,6 +149,7 @@ const App = () => {
         }}
         onAddToCart={handleAddToCart}
       />
+      </div>
       <Cart cartItems={cartItems} />
     </div>
   );
